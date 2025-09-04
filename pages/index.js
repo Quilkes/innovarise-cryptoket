@@ -140,7 +140,9 @@ const Home = () => {
                     <CreatorCard
                       key={creator.seller}
                       rank={i + 1}
-                      creatorImage={images.creator || images[`creator${(i % 6) + 1}`]}
+                      creatorImage={
+                        images.creator || images[`creator${(i % 6) + 1}`]
+                      }
                       creatorName={shortenAddress(creator.seller)}
                       creatorEths={creator.sum}
                     />
